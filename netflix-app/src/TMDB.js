@@ -1,6 +1,12 @@
-const   API_KEY = '07de60cc832a7924590b50bb4e03689d';
-const API_BASE = 'https://api.themoviedb.org/3';
+const  {API_KEY, API_BASE} = require("../src/config/TMDB.json")
 
+const basicFetch = async (endPoint) => {
+
+    const req = await fetch(`${API_BASE}${endPoint}`)
+    const json = await req.json();
+
+    return json
+}
 
 export default {
 
@@ -11,7 +17,7 @@ export default {
             {
                 slug: 'original',
                 title: 'Originais da Netflix',
-                items: []
+                items: await basicFetch("/dicover/tv&with_network=213")
             },
             
             {
