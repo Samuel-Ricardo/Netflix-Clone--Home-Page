@@ -1,4 +1,5 @@
 const  {API_KEY, API_BASE} = require("../src/config/TMDB.json")
+const CONFIG = `language=pt-BR&api_key=${API_KEY}`
 
 const basicFetch = async (endPoint) => {
 
@@ -17,49 +18,49 @@ export default {
             {
                 slug: 'original',
                 title: 'Originais da Netflix',
-                items: await basicFetch("/dicover/tv&with_network=213")
+                items: await basicFetch(`/dicover/tv&with_network=213&${CONFIG}`)
             },
             
             {
                 slug: 'trending',
                 title: 'Recomendados',
-                items: []
+                items: await basicFetch(`/trending/all/week?${CONFIG}`)
             },
 
             {
                 slug: 'top rated',
                 title: 'Em Alta',
-                items: []
+                items: await basicFetch(`/movie/top-rated?${CONFIG}`)
             },
 
             {
                 slug: 'Action',
                 title: 'Ação',
-                items: []
+                items: await basicFetch(`/discover/movie?with_genres=28?${CONFIG}`)
             },
 
             {
                 slug: 'comedy',
                 title: 'Comédia',
-                items: []
+                items: await basicFetch(`/discover/movie?with_genres=35?${CONFIG}`)
             },
             
             {
                 slug: 'horror',
                 title: 'Terror',
-                items: []
+                items: await basicFetch(`/discover/movie?with_genres=27?${CONFIG}`)
             },
             
             {
                 slug: 'romance',
                 title: 'Romance',
-                items: []
+                items: await basicFetch(`/discover/movie?with_genres=10749?${CONFIG}`)
             },
             
             {
                 slug: 'documentary',
                 title: 'Documentario',
-                items: []
+                items: await basicFetch(`/discover/movie?with_genres=99?${CONFIG}`)
             },
         ]
     }
