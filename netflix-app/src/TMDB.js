@@ -7,12 +7,54 @@ export default {
     getHomeList: async () => {
 
         return [
-            
+
             {
                 slug: 'original',
-                title: 'originais da netflix',
+                title: 'Originais da Netflix',
                 items: []
-            }
+            },
+            
+            {
+                slug: 'trending',
+                title: 'Recomendados',
+                items: []
+            },
+
+            {
+                slug: 'top rated',
+                title: 'Em Alta',
+                items: []
+            },
+
+            {
+                slug: 'Action',
+                title: 'Ação',
+                items: []
+            },
+
+            {
+                slug: 'comedy',
+                title: 'Comédia',
+                items: []
+            },
+            
+            {
+                slug: 'horror',
+                title: 'Terror',
+                items: []
+            },
+            
+            {
+                slug: 'romance',
+                title: 'Romance',
+                items: []
+            },
+            
+            {
+                slug: 'documentary',
+                title: 'Documentario',
+                items: []
+            },
         ]
     }
 }
