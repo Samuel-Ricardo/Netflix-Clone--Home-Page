@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
-import MovieRow from "./Components/MovieRow/MovieRow"
+import MovieRow from "./Components/MovieRow"
+import FeatureMovie from './Components/FeatureMovie'
 
 import './App.css';
 
@@ -32,6 +33,8 @@ export default () => {
 
   return(
     <div className="Page">
+
+    <FeatureMovie/>
 
       <section className="Lists">
 

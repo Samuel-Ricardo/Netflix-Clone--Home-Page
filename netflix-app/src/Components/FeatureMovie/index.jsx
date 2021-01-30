@@ -2,9 +2,9 @@ import React from 'react'
 
 import './FeatureMovie.css'
 
-export default () => {
+export default () => (
 
     <div>
         Filme Em Destaque
     </div>
-}
+)
