@@ -1,10 +1,13 @@
 import React from 'react'
+import './MovieRow.css'
 
 export default ({title, itens}) => {
     
     return(
-        <div>
-          <h2>{title}</h2>
+        <div className="MovieRow">
+
+          <h2 className="Title">{title}</h2>
+
           <div className="MovieRow--ListArea">
             <div className="MovieRow--List">
 
