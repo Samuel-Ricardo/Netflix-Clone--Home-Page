@@ -5,14 +5,14 @@
     height: 100vh;
 }
 
-.Featured-Vertical-Gradient{
+.Featured--Vertical-Gradient{
 
     width: inherit;
     height: inherit;
     background: linear-gradient(to top,#111 10%, transparent 90%);
 }
 
-.Featured-Horizontal-Gradient{
+.Featured--Horizontal-Gradient{
 
     width: inherit;
     height: inherit;
