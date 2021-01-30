@@ -1,5 +1,5 @@
 const  {API_KEY, API_BASE} = require("../src/config/TMDB.json")
-const CONFIG = `language=pt-BR&api_key=${API_KEY}`
+const CONFIG = `api_key=${API_KEY}&language=pt-BR`
 
 const basicFetch = async (endPoint) => {
 
@@ -14,11 +14,11 @@ export default {
     getHomeList: async () => {
 
         return [
-
+    
             {
                 slug: 'original',
                 title: 'Originais da Netflix',
-                items: await basicFetch(`/dicover/tv&with_network=213&${CONFIG}`)
+                items: await basicFetch(`/discover/tv?${CONFIG}&with_network=213`)
             },
             
             {
@@ -26,42 +26,43 @@ export default {
                 title: 'Recomendados',
                 items: await basicFetch(`/trending/all/week?${CONFIG}`)
             },
-
+    
             {
                 slug: 'top rated',
                 title: 'Em Alta',
-                items: await basicFetch(`/movie/top-rated?${CONFIG}`)
+                items: await basicFetch(`/movie/top_rated?${CONFIG}`)
             },
-
+    
             {
                 slug: 'Action',
                 title: 'Ação',
-                items: await basicFetch(`/discover/movie?with_genres=28?${CONFIG}`)
+                items: await basicFetch(`/discover/movie?with_genres=28&${CONFIG}`)
             },
-
+    
             {
                 slug: 'comedy',
                 title: 'Comédia',
-                items: await basicFetch(`/discover/movie?with_genres=35?${CONFIG}`)
+                items: await basicFetch(`/discover/movie?with_genres=35&${CONFIG}`)
             },
             
             {
                 slug: 'horror',
                 title: 'Terror',
-                items: await basicFetch(`/discover/movie?with_genres=27?${CONFIG}`)
+                items: await basicFetch(`/discover/movie?with_genres=27&${CONFIG}`)
             },
             
             {
                 slug: 'romance',
                 title: 'Romance',
-                items: await basicFetch(`/discover/movie?with_genres=10749?${CONFIG}`)
+                items: await basicFetch(`/discover/movie?with_genres=10749&${CONFIG}`)
             },
             
             {
                 slug: 'documentary',
                 title: 'Documentario',
-                items: await basicFetch(`/discover/movie?with_genres=99?${CONFIG}`)
+                items: await basicFetch(`/discover/movie?with_genres=99&${CONFIG}`)
             },
-        ]
+        ];
     }
+    
 }
