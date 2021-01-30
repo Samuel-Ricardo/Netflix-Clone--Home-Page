@@ -67,25 +67,14 @@ export default {
 
     getInfo: async (id, type) => {
 
+        //type - movie // tv(serie)
+
         let info = {}
 
         if(id){
-
-            switch (type) {
-
-                case 'movie':
-    
-                    info = await basicFetch(`/movie/{id}?${CONFIG}`)
-
-                break;
-
-                case 'tv':
-    
-                    info = await basicFetch(`/tv/{id}?${CONFIG}`)
-
-                break;
+            if(type){
+                info = await basicFetch(`/${type}/${id}?${CONFIG}`)
             }
-
         }
         return info;
     }
