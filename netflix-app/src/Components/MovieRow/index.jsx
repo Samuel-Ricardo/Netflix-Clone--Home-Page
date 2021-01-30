@@ -14,7 +14,7 @@ export default ({title, itens}) => {
             {itens.results.length > 0 && itens.results.map((movie, key) => (
 
               <div className="MovieRow--Item">
-                <img src= {`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={itens.original_title}/>
+                <img src= {`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={itens.original_title}/>
               </div>
               
             ))}

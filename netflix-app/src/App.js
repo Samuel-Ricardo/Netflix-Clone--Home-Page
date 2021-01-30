@@ -12,6 +12,8 @@ import TMDB from "../src/Connections/TMDB"
 export default () => {
 
   const [movieLists, setMovieLists] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null)
+
 
   useEffect(() => {
   
@@ -23,6 +25,12 @@ export default () => {
 
       setMovieLists(list)
 
+      let original = list.filter(movieList => movieList.slug === 'original')
+      let randomChosen = Math.floor(Math.random() * (original[0].items.results.length - 1 ))
+      let chosen = original[0].items.results[randomChosen]
+
+      console.log("ESCOLHIDO")
+      console.log(chosen)
 
     }
   
@@ -34,7 +42,8 @@ export default () => {
   return(
     <div className="Page">
 
-    <FeatureMovie/>
+      {selectedMovie && 
+        <FeatureMovie movie={selectedMovie}/>}
 
       <section className="Lists">
 
