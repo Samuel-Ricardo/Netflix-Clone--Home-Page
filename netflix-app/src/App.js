@@ -10,9 +10,10 @@ export default () => {
     const loadAll = async () => {
   
       let list = await TMDB.default.getHomeList()
-  
-      console.log(list)
+        
       setMovieList(list)
+
+      console.log(movieList)
       
     }
   
@@ -23,7 +24,7 @@ export default () => {
 
   return(
     <div>
-      Hello word
+      Hello world
     </div>
   )
 }
