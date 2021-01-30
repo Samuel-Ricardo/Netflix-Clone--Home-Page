@@ -28,6 +28,7 @@ export default () => {
       let original = list.filter(movieList => movieList.slug === 'original')
       let randomChosen = Math.floor(Math.random() * (original[0].items.results.length - 1 ))
       let chosen = original[0].items.results[randomChosen]
+      let chosenInfo = await TMDB.getInfo(chosen.id, 'tv')
 
       console.log("ESCOLHIDO")
       console.log(chosen)
