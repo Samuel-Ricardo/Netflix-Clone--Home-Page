@@ -1,4 +1,4 @@
-const  {API_KEY, API_BASE} = require("../src/config/TMDB.json")
+const  {API_KEY, API_BASE} = require("../config/TMDB.json")
 const CONFIG = `api_key=${API_KEY}&language=pt-BR`
 
 const basicFetch = async (endPoint) => {

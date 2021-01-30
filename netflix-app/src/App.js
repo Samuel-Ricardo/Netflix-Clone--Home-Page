@@ -2,7 +2,10 @@ import React, {useEffect, useState} from 'react'
 
 import MovieRow from "./Components/MovieRow/MovieRow"
 
-const TMDB = require("../src/TMDB")
+import './App.css';
+
+import TMDB from "../src/Connections/TMDB"
+
 
 
 export default () => {
@@ -13,7 +16,7 @@ export default () => {
   
     const loadAll = async () => {
   
-      let list = await TMDB.default.getHomeList()
+      let list = await TMDB.getHomeList()
       
       console.log(list)
 
