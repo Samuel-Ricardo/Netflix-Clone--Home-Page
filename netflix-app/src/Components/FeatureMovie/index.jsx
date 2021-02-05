@@ -39,7 +39,7 @@ export default ({movie}) =>{
                 </div>
 
                 <div className="Featured--Seasons">
-                    {movie.number_of_seasons} temporada{movie.number_of_seasons !== 1 ? 's' : ''}
+                    {movie.number_of_seasons} temporada{movie.number_of_seasons !== 1 ? "s" : ''}
                 </div>
             </div>
 

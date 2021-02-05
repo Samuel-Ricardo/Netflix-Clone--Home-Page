@@ -9,6 +9,7 @@
 
     width: inherit;
     height: inherit;
+
     background: linear-gradient(to top,#111 10%, transparent 90%);
 }
 
@@ -16,7 +17,16 @@
 
     width: inherit;
     height: inherit;
+
     background: linear-gradient(to right,#111 20%, transparent );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 30px;
+    padding-top: 70px;
+    padding-bottom: 150px;
 }
 
 .Featured--Name{
