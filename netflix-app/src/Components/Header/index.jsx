@@ -5,7 +5,7 @@ export default () => {
 
     return (
         
-        <header>
+        <header className="Black">
 
             <div className="Header--Logo">
 

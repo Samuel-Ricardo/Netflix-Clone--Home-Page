@@ -1,0 +1,47 @@
+header{
+
+    position: fixed;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 999;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+
+    padding: 0 30px;
+    background: transparent;
+
+}
+
+header.Black {
+    background: linear-gradient(to bottom, #141414 40%, transparent 100%);
+}
+
+header.Gradient{
+
+    background: linear-gradient(to bottom, #141414, transparent);
+}
+
+.Header--Logo{
+    height: 25px;
+} 
+
+.Header--Logo img{
+
+    height: 100%;
+}
+
+.Header--User{
+    height: 45px;
+} 
+
+.Header--User img{
+
+    height: 100%;
+    border-radius: 2px;
+}
