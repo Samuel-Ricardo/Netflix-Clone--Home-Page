@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 
 import MovieRow from "./Components/MovieRow"
 import FeatureMovie from './Components/FeatureMovie'
+import Header from './Components/Header'
 
 import './App.css';
 
@@ -45,7 +46,10 @@ export default () => {
 
 
   return(
+
     <div className="Page">
+
+      <Header />
 
       {selectedMovie && 
         <FeatureMovie movie={selectedMovie}/>}
