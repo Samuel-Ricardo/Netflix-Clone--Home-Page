@@ -41,3 +41,11 @@
 .Featured--Rated{
     color: #46d369;
 }
+
+.Featured--Description{
+
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999999;
+    max-width: 50%;
+}

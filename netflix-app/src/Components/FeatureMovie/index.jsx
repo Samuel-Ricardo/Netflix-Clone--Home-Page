@@ -35,7 +35,7 @@ export default ({movie}) =>{
                 </div>
 
                 <div className="Featured--Year">
-                    {movieDate.getFullYear}
+                    {movieDate.getFullYear()}
                 </div>
 
                 <div className="Featured--Seasons">
