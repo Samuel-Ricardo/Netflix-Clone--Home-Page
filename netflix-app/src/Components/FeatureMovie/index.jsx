@@ -49,8 +49,8 @@ export default ({movie}) =>{
 
             <div className="Featured--Buttons">
                 
-                <a href={`/wacht/${movie.id}`}>► Play</a>
-                <a href={`/list/add/${movie.id}`}>+ Minha Lista</a>
+                <a href={`/wacht/${movie.id}`} className="Featured--WatchButton"> ► Play</a>
+                <a href={`/list/add/${movie.id}`} className="Featured--MyListButton"> + Minha Lista</a>
                 
             </div>
 
