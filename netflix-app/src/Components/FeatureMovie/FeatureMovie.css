@@ -18,3 +18,26 @@
     height: inherit;
     background: linear-gradient(to right,#111 20%, transparent );
 }
+
+.Featured--Name{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.Featured--Info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Featured--Rated,
+.Featured--Year,
+.Featured--Seasons{
+
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Featured--Rated{
+    color: #46d369;
+}

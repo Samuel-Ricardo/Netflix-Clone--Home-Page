@@ -25,36 +25,36 @@ export default ({movie}) =>{
     <div className="Featured--Vertical-Gradient">
         <div className="Featured--Horizontal-Gradient">
 
-            <div className="Featured--name">
+            <div className="Featured--Name">
                 {movie.original_name}
             </div>
 
-            <div className="Featured--info">
-                <div className="Featured--rated">
+            <div className="Featured--Info">
+                <div className="Featured--Rated">
                 {movie.vote_average * 10}%
                 </div>
 
-                <div className="Featured--year">
+                <div className="Featured--Year">
                     {movieDate.getFullYear}
                 </div>
 
-                <div className="Featured--seasons">
+                <div className="Featured--Seasons">
                     {movie.number_of_seasons} temporada{movie.number_of_seasons !== 1 ? 's' : ''}
                 </div>
             </div>
 
-            <div className="Featured--description">
+            <div className="Featured--Description">
               {movie.overview}  
             </div>
 
-            <div className="Featured--buttons">
+            <div className="Featured--Buttons">
                 
                 <a href={`/wacht/${movie.id}`}>► Play</a>
                 <a href={`/list/add/${movie.id}`}>+ Minha Lista</a>
                 
             </div>
 
-            <div className="Featured--gneres">
+            <div className="Featured--Genres">
                 <strong>Genres: </strong>{genres.join(', ')}
             </div>
         </div>
