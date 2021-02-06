@@ -93,8 +93,8 @@ export default () => {
                 Copyright &copy; NETFLIX Brasil. Todos Direitos Reservados
             </p>
 
-            <p>
-                 &copy; Dados dos Filmes / Séries - <img src='https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg'></img>
+            <p id="TMDB">
+                 &copy; Dados dos Filmes / Séries - <a href="https://www.themoviedb.org/" target="_blank" ><img src='https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg'></img></a> 
             </p>
 
             <p>
