@@ -1,11 +1,11 @@
 import React from 'react'
 import './Header.css'
 
-export default () => {
+export default ({isBlack}) => {
 
     return (
         
-        <header className="Black">
+        <header className={isBlack ? 'Black' : 'Gradient'}>
 
             <div className="Header--Logo">
 

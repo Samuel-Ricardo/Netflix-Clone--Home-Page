@@ -14,6 +14,7 @@ export default () => {
 
   const [movieLists, setMovieLists] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null)
+  const [isHeaderBlack, setIsHeaderBlack] = useState(false)
 
 
   useEffect(() => {
@@ -41,15 +42,35 @@ export default () => {
     }
   
     loadAll();
-  
+
   }, [])
 
+
+  useEffect(()=> {
+
+    const scrollListener = () => {
+
+      if(window.scrollY > 50){
+        setIsHeaderBlack(true)
+      }else{
+        setIsHeaderBlack(false)
+      }
+
+    }
+
+    window.addEventListener('scroll',scrollListener)
+
+    return () => {
+      window.removeEventListener('scroll',scrollListener)
+    }
+
+  },[])
 
   return(
 
     <div className="Page">
 
-      <Header />
+      <Header isBlack={isHeaderBlack}/>
 
       {selectedMovie && 
         <FeatureMovie movie={selectedMovie}/>}

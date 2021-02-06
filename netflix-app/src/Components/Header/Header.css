@@ -16,6 +16,7 @@ header{
     padding: 0 30px;
     background: transparent;
 
+    transition: all ease 0.5s;
 }
 
 header.Black {
