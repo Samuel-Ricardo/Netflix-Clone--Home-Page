@@ -87,6 +87,33 @@ export default () => {
 
       </section>
       
+      <footer>
+      
+            <p>
+                Copyright &copy; NETFLIX Brasil. Todos Direitos Reservados
+            </p>
+
+            <p>
+                 &copy; Dados dos Filmes / Séries - <img src='https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg'></img>
+            </p>
+
+            <p>
+                 &copy; Criador: <a href="https://www.linkedin.com/in/samuel-ricardo-cabral/" target="_blank">Samuel Ricardo Cabral de Barros</a> - Programmer
+           </p>
+
+           <p>
+               Dá uma olhada por aqui :)
+           </p>
+
+           <p>
+            || <a href="https://www.linkedin.com/in/samuel-ricardo-cabral/" target="_blank">LinkedIn</a> || <a href="https://github.com/Samuel-Ricardo" target="_blank">GitHub</a> || <a href="https://www.upwork.com/o/profiles/users/~013ef0c3301efacbdd/" target="_blank">Upwork</a> || <a href="https://www.99freelas.com.br/user/Samuel_Ricardo" target="_blank">99Freelas</a> || 
+           </p>
+
+           <p>
+           GitHub do Projeto <a href="https://github.com/Samuel-Ricardo/Netflix-Clone--Home-Page" target="_blank">Netflix-Clone</a>
+           </p>
+
+      </footer>
     </div>
   )
 }
