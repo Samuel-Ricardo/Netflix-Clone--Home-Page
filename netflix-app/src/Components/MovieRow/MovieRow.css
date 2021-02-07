@@ -15,7 +15,7 @@
 }
 
 .MovieRow--List {
-    width: 99999999999999px;
+    transition: all ease 0.75s;
 }
 
 .MovieRow--Item {
