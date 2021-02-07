@@ -1,10 +1,21 @@
 import React from 'react'
 import './MovieRow.css'
 
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+
 export default ({title, itens}) => {
     
     return(
         <div className="MovieRow">
+
+          <div className="MovieRow--rigth">
+            <NavigateNextIcon style={{fontSize: 50}}/>
+          </div>
+
+          <div className="MovieRow--left">
+            <NavigateBeforeIcon style={{fontSize: 50}}/>
+          </div>
 
           <h2 className="Title">{title}</h2>
 
