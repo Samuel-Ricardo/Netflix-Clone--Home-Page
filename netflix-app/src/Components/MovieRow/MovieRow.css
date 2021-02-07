@@ -35,3 +35,45 @@
 .MovieRow--Item img:hover {
     transform: scale(1.0);
 }
+
+.MovieRow--Left,
+.MovieRow--Right{
+
+    position: absolute;
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 250px;
+
+    margin-top: 30px;
+    
+    overflow: hidden;
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: all ease 0.75s;
+}
+
+.MovieRow--Left{
+
+    left: 0;
+    background: linear-gradient(to right, #111 25%, transparent);
+}
+
+.MovieRow--Right{
+
+    right: 0;
+    background: linear-gradient(to left, #111 25%, transparent);
+}
+
+.MovieRow:hover .MovieRow--Left,
+.MovieRow:hover .MovieRow--Right{
+
+    opacity: 1;
+
+}

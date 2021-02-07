@@ -9,11 +9,11 @@ export default ({title, itens}) => {
     return(
         <div className="MovieRow">
 
-          <div className="MovieRow--rigth">
+          <div className="MovieRow--Right">
             <NavigateNextIcon style={{fontSize: 50}}/>
           </div>
 
-          <div className="MovieRow--left">
+          <div className="MovieRow--Left">
             <NavigateBeforeIcon style={{fontSize: 50}}/>
           </div>
 
