@@ -20,7 +20,20 @@ export default ({title, itens}) => {
     setScrollX(x)
   }
 
-  
+  const handlerRightArrow = () => {
+
+    let x = scrollX - Math.round(window.innerWidth / 2)
+
+    let listWidth = itens.results.length * 150
+
+    if((window.innerWidth - listWidth) > x ){
+      x = (window.innerWidth - listWidth) - 80
+    }
+      setScrollX(x)
+    
+
+  } 
+
 
     return(
         <div className="MovieRow">
