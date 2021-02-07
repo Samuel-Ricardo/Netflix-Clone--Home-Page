@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import MovieRow from "./Components/MovieRow"
 import FeatureMovie from './Components/FeatureMovie'
 import Header from './Components/Header'
+import Loading from './Components/Loading'
 
 import './App.css';
 
@@ -116,14 +117,15 @@ export default () => {
       </footer>
 
 
-        {movieLists.length <= 0 && 
-      
-        <div className='Loading'>
 
-          <img src='https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif'>
-          </img>
+        {movieLists.length <=0 &&    
+      
+          <Loading src={'https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif'} />
+        }
         
-        </div>
+        {movieLists.length >0 &&    
+      
+          <Loading src={'https://haasentertainment.com/wp-content/uploads/2019/11/ReflectingNeglectedBug-size_restricted.gif'} exitTime={3050}/>
         }
         
 
