@@ -4,7 +4,8 @@ import './FeatureMovie.css';
 
 export default ({movie}) =>{
     
-    const movieDate = new Date(movie.first_air_date)
+    const [movieDate, setmovieDate] = useState(new Date(movie.first_air_date))
+
     const [genres, setGenres] = useState([])
 
     for (let cont in movie.genres ){
