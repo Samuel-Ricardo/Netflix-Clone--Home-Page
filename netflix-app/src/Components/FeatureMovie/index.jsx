@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './FeatureMovie.css';
 
 export default ({movie}) =>{
     
     const movieDate = new Date(movie.first_air_date)
-    const genres = []
+    const [genres, setGenres] = useState([])
 
     for (let cont in movie.genres ){
         genres.push(movie.genres[cont].name)
