@@ -82,7 +82,7 @@ export default () => {
 
        {movieLists.map((movieList, key) =>(
          
-         <MovieRow key={key} itens={movieList.items} title={movieList.title} />
+         <MovieRow key={key} itens={movieList.items} title={movieList.title} onSelect={setSelectedMovie}/>
          
        ))}
 
