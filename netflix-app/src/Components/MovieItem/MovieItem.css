@@ -1,4 +1,3 @@
-
 .MovieRow--Item {
 
     display: inline-block;
@@ -14,5 +13,9 @@
 }
 
 .MovieRow--Item img:hover {
+    transform: scale(1.0);
+}
+
+.MovieRow--Item img:focus {
     transform: scale(1.0);
 }

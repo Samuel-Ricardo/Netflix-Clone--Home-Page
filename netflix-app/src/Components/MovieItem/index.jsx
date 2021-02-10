@@ -1,4 +1,5 @@
 import React from 'react'
+import './MovieItem.css'
 
 export default class MovieItem extends React.Component{
 
