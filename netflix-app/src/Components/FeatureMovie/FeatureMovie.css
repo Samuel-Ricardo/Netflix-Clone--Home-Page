@@ -106,3 +106,33 @@
     font-size: 18px;
     color: #999
 }
+
+@media (max-width: 760px){
+
+ .Featured--Name {
+     font-size: 40px;
+ }
+
+  .Featured--Info {
+     font-size: 18px;
+ }
+
+  .Featured--Description {
+      
+      font-size: 16px;
+
+      max-width: 100%;
+      margin-right: 30px
+ }
+
+.Featured--WatchButton,
+.Featured--MyListButton {
+
+    font-size: 15px;
+}
+
+.Featured--Genres{
+    font-size: 14px
+}
+
+}

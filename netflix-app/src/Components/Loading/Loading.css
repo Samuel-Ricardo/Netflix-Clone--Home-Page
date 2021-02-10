@@ -25,3 +25,12 @@
 
     width: 100%;
 }
+
+@media (max-width: 760px){
+
+.Loaded img {
+
+    height: 100%;
+    width: 225%;
+}
+}
