@@ -1,24 +1,30 @@
-import { ReactComponent } from '*.svg'
 import React from 'react'
 
+export default class MovieItem extends React.Component{
 
-class MovieRow extends React.Component{
     constructor(){
+        super()
+        
         this.selectMovie = this.selectMovie.bind(this)
     }
 
 
     selectMovie = () => {
 
-        this.props.onSelect(this.props.movie)
+        this.props.select(this.props.movie)
     }
 
     render (){
 
-        <div className="MovieRow--Item" onClick={this.selectMovie}>
+        return(
+            <div className="MovieRow--Item" onClick={this.selectMovie}>
 
-            <img src= {`https://image.tmdb.org/t/p/w300${this.props.movie.poster_path}`} alt={this.props.itens.original_title}/>
+                <img src= {`https://image.tmdb.org/t/p/w300${this.props.movie.poster_path}`} alt={this.props.itens.original_title}/>
             
-        </div>
+            </div>
+        )
     }
 }
+
+
+ 
