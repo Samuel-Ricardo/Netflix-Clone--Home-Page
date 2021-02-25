@@ -26,6 +26,7 @@ This clone was made for the purpose of studies, inspired by the application buil
 
 Desktop version
 
+  > ![](https://github.com/Samuel-Ricardo/Netflix-Clone--Home-Page/blob/master/readme_files/ezgif.com-gif-maker(Home-Page).gif)
 
 ## 📱 Mobile 
 
