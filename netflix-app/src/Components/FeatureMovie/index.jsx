@@ -3,19 +3,26 @@ import React, { useState } from 'react';
 import './FeatureMovie.css';
 
 export default ({movie}) =>{
-    
+
     const [movieDate, setmovieDate] = useState(new Date(movie.first_air_date))
 
     const [genres, setGenres] = useState([])
 
-    for (let cont in movie.genres ){
+
+
+    for (let cont in movie.genres) {
+
+        while(genres.length > 0) {
+            genres.pop();
+        }
+
         genres.push(movie.genres[cont].name)
     }
 
     return (
 
 
-    
+
 
     <section className="Featured" style={{
         backgroundSize : 'cover',
@@ -45,14 +52,14 @@ export default ({movie}) =>{
             </div>
 
             <div className="Featured--Description">
-              {movie.overview}  
+              {movie.overview}
             </div>
 
             <div className="Featured--Buttons">
-                
+
                 <a href={`/wacht/${movie.id}`} className="Featured--WatchButton"> ► Play</a>
                 <a href={`/list/add/${movie.id}`} className="Featured--MyListButton"> + Minha Lista</a>
-                
+
             </div>
 
             <div className="Featured--Genres">
